@@ -1,0 +1,26 @@
+<div id="viewCheckPage" data-role="page" data-class="com/views/ViewCheckPageView">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>%title.your.check%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e" role="main">
+		<li data-role="list-divider">%account.check.front%</li>
+		<li class="checkImage">
+			<img id="imgFront" src="../images/check.png" alt="check_front">
+		</li>
+		<li data-role="list-divider">%account.check.back%</li>
+		<li class="checkImage">
+			<img id="imgBack"src="../images/check_back.png" alt="check_back"/>
+		</li>
+	</ul>
+	
+	<div data-role="popup" id="popupPage" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="0,0,0,0" >
+		<img src="" alt="check_front">
+	</div>
+</div>
+
+

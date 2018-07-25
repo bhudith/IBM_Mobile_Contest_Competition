@@ -1,0 +1,44 @@
+<div id="moneyPage" data-role="page" data-class="com/views/MoneyPageView">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a href="#menuPanel" data-icon="bars" data-role="button" data-iconpos="notext" data-theme="d">
+		   <span aria-hidden="true">MenuPanel</span>		
+		</a>
+		<h1>%title.send.money%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>	
+	</div>
+	
+	<div data-role="content" role="main">
+		<h4>%money.title%</h4>
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider" class="small">%money.from%</li>
+			<li id="moneyAccount">
+				<a href="select_account.html?accountStorageKey=selectedMoneyAccount" data-transition="slide" data-rel="dialog">
+					<div class="selectedInfo">%money.send.from%</div>
+				</a>
+			</li>
+			<li data-role="list-divider" class="small">%money.to%</li>
+			<li id="moneyPayee">
+				<a href="money_payee.html?onSelectToPage=money.html" data-transition="slide" data-rel="dialog">
+					<div class="selectedInfo">%money.send.to%</div>
+				</a>
+			</li>
+			<li class="form">%cash.enter.amount%<span class="rightForm">
+				<input class="amountInput" data-mini="true" id="transferAmount" type="text" onkeyup="value=value.replace(/[^\d\.]/g,'')"/></span>
+			</li>
+		</ul>
+		<div class="row">
+			<div class="col-xs-12">
+				<input id="transferBtn" type="button" data-theme="b" disabled="disabled" value="%money.send.button%" />
+			</div>
+			<div class="col-xs-12">
+				<button id="cancelBtn" data-role="button" data-theme="c">
+					%money.cancel.button%</button>
+			</div>
+		</div>
+	</div>
+	
+    <div data-role="panel" id="menuPanel" data-theme="b" role="navigation" data-position-fixed="true" data-animate="false">
+    </div>
+</div>

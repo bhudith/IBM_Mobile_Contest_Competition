@@ -1,0 +1,10 @@
+{{#each messages}}
+	<li class="message" data-id="{{this.messageId}}">    	
+		<a href="message.html">
+			<span class="unreadBubbleSpan"></span>
+			<h3>{{this.subject}}</h3>
+			<p>{{this.date}}</p>
+			<span class="urgentBubbleSpan"></span>
+		</a>		
+	</li>
+{{/each}}

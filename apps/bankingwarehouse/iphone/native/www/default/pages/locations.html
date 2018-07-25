@@ -1,0 +1,26 @@
+<div id="locationsPage" data-role="page" data-class="com/views/LocationsPageView">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a href="#menuPanel" data-icon="bars"  data-role="button" data-iconpos="notext" data-theme="d">
+			<span aria-hidden="true">MenuPanel</span>
+		</a>
+		<h1>%title.locations%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<div data-role="content" class="row" role="main">
+		<ul id="locationsMap" data-role="listview" data-filter="false" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider">%locations.branch.map%</li>
+			<li>
+				<div id="map" style="width:300px;height:200px"></div>
+			</li>
+		</ul>
+		<ul id="locationsList" data-role="listview" data-filter="false" data-inset="false"  data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider">%locations.branch.list%</li>
+		</ul>
+	</div>
+	
+	<div data-role="panel" id="menuPanel" data-theme="b" role="navigation" data-position-fixed="true" data-animate="false">
+	</div>
+</div>

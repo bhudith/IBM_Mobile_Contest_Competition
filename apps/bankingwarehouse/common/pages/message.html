@@ -1,0 +1,25 @@
+<div id="messagePage" data-role="page" data-class="com/views/MessagePageView">
+	<div data-role="header" data-theme="b" data-position="fixed">
+		<a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>%title.message%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<div data-role="content">
+		<div id="title" class="row">
+				<h1></h1>
+				<p><strong>Date:&nbsp;</strong></p>
+		</div>
+		<hr/>
+		<div id="messageContent">
+			<p></p>
+		</div>
+		<div class="row">
+			<div class="col-xs-12" style="display:none">
+				<input id="deleteBtn" type="button" data-theme="c" disabled="disabled" value="%message.delete.button%" />
+			</div>
+		</div>
+	</div>
+</div>

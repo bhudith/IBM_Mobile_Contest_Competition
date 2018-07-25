@@ -1,0 +1,43 @@
+<div id="checkPage" data-role="page" data-class="com/views/CheckPageView">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a href="#menuPanel" data-icon="bars" data-role="button" data-iconpos="notext" data-theme="d">
+		   <span aria-hidden="true">MenuPanel</span>
+		</a>
+		<h1>%title.deposit.check%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+	
+	<div data-role="content" class="row" role="main">
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li id="checkToAccount">
+				<a href="select_account.html?accountStorageKey=selectedCheckToAccount" data-transition="slide" data-rel="dialog">
+				  <div class="selectedInfo">%check.deposit.account%</div>
+				</a>
+			</li>
+			<li class="form">%cash.enter.amount%<span class="rightForm">
+				<input class="amountInput" data-mini="true" id="checkAmount" type="text" onkeyup="value=value.replace(/[^\d\.]/g,'')"/></span>
+			</li>
+			<li id="checkFront" class="camera">
+				<a href="#">%check.front.check%<img class="checkImage" alt="check_front" style="display:none"/></a>
+			</li>
+			<li id="checkBack" class="camera">
+				<a href="#">%check.back.check%<img class="checkImage" alt="check_back" style="display:none"/></a>
+			</li>
+		</ul>
+		<div class="row">
+			<div class="col-xs-12">
+				<input id="confirmBtn" type="button" data-theme="b" disabled="disabled" value="%check.deposit.button%" />
+			</div>
+		</div>
+		<div class="row">
+				<div class="col-xs-12">
+				<button id="cancelBtn" data-role="button" data-theme="c">%check.deposit.cancel%</button>
+			</div>
+		</div>
+	</div>
+	
+    <div data-role="panel" id="menuPanel" data-theme="b" role="navigation" data-position-fixed="true" data-animate="false">
+    </div>
+</div>

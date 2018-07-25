@@ -1,0 +1,48 @@
+<div id="spendingByCategoryPage" data-role="page" data-class="com/views/SpendingByCategoryPageView">
+	<div data-role="header" data-theme="b" data-position="fixed">
+		<a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>%title.accounts.spending%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d"><span aria-hidden="true">HomePage</span></a>
+	</div>
+
+	<div data-role="content">
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+		<li data-role="list-divider">%account.spending.account%</li>
+			<li id="categoryAccount">
+				<a href="select_account.html?accountStorageKey=selectedCategoryAccount" class="text" data-transition="slide" data-rel="dialog">
+					<div class="selectedInfo"></div>
+				</a>
+			</li>
+			<li data-role="list-divider">%account.spending.date.range%</li>
+			<li class="form">
+				<label for="dateFrom">%account.spending.from%</label>
+				<span class="rightForm">
+					<div class="input-group date form_datetime" data-link-field="dtp_input1">
+						<input class="form-control" type="text" id="dateFrom" value="" readonly>
+						<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+				   </div> 
+				</span>
+			</li>
+			<li class="form">
+				<label for="dateTo">%account.spending.to%</label>
+				<span class="rightForm">
+					<div class="input-group date form_datetime" data-link-field="dtp_input1">
+						<input class="form-control" type="text" id="dateTo" value="" readonly>
+						<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+					</div>
+				</span>
+			</li>
+			<li data-role="list-divider">%account.spendingbycategory%</li>
+			<li class="tabNav">
+			 	<div data-role="navbar">
+					<ul>
+						<li><a id="pieChart" href="#" data-theme="a">Pie Chart</a></li>
+						<li><a id="barChart" href="#" data-theme="a">Bar Chart</a></li>
+					</ul>
+					<div id="piechartContainer"></div>
+					<div id="barchartContainer"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

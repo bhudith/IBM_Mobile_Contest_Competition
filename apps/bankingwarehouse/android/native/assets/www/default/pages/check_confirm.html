@@ -1,0 +1,38 @@
+<div id="checkConfirmPage" data-role="page" data-class="com/views/CheckConfirmPageView">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a id="backid" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>%title.deposit.confirm%</h1>
+		<a id="homeid" href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<div data-role="content" class="row" role="main">
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider">%check.deposit.account%</li>
+			<li id="checkToAccount">
+				<a id="accountid" href="select_account.html?accountStorageKey=selectedCheckToAccount" data-transition="slide" data-rel="dialog">
+					<div class="selectedInfo"></div>
+				</a>
+			</li>
+			<li data-role="list-divider">%check.deposit.confirm.amount%</li>
+			<li id="checkAmount">
+				<div class="selectedInfo"></div>
+				<div id="edit" style="display:none;">
+					<input id="confirmAmount" class="amountInput" data-mini="true" type="text" onkeyup="value=value.replace(/[^\d\.]/g,'')"/></span>
+                </div>
+			</li>
+			<li data-role="list-divider">%check.deposit.image%</li>
+			<li id="checkFront" class="camera"><a href="#">%check.front.check% <img class="checkImage" alt="check_front" style="display:inline"/></a></li>
+			<li id="checkBack" class="camera"><a href="#">%check.back.check% <img class="checkImage" alt="check_back" style="display:inline"/></a></li>
+
+			<li data-role="list-divider">%check.deposit.detail%</li>
+			<li id="routingNumber">%check.deposit.routing.number%<div class="rightText"></div></li>
+			<li id="checkAccount">%check.deposit.checkAccount%<div class="rightText"></div></li>
+		</ul>
+		<div class="row">
+			<div class="col-xs-12"><input id="confirmBtn" type="button" data-theme="b" value="%check.deposit.confirm%" /></div>
+			<div class="col-xs-12"><input id="cancelBtn" type="button" data-theme="c" value="%check.deposit.cancel%" /></div>
+		</div>
+	</div>
+</div>

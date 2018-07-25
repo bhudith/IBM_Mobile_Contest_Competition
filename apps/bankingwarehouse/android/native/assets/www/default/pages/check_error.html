@@ -1,0 +1,27 @@
+<div id="checkErrorPage" data-role="page" data-class="com/views/CheckErrorView">
+
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>%title.deposit.error%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<div data-role="content" class="row" role="main">
+        <div id="photo_error" >
+             <p class="errorInfo1">%check.photo.error1%</p>
+             <p class="errorInfo2">%check.photo.error2%</p>
+             <p></p>
+             <p class="errorInstruction">%check.photo.message%</p>
+        </div>
+        <div id="data_error" style="display:none">
+             <p class="errorInfo">%check.data.message%</p>
+             <p class="errorInstruction">%check.data.error%</p>
+        </div>
+		<div class="row">
+			<div class="col-xs-12"><button id="confirmBtn" data-role="button" data-theme="b">%check.deposit.retry%</button></div>
+			<div class="col-xs-12"><button id="cancelBtn" data-role="button" data-theme="c">%check.deposit.cancel%</button></div>
+		</div>
+	</div>
+</div>

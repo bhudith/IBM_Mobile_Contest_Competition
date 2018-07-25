@@ -1,0 +1,75 @@
+<div id="setWithdrawlAlertPage" data-role="page">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a href="#menuPanel" data-icon="bars" data-role="button" data-iconpos="notext" data-theme="d">
+			<span aria-hidden="true">MenuPanel</span>
+		</a>
+		<h1>Withdrawl Alerts</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+			<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<div data-role="content" role="main">
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider">Checking***5652</li>
+			<li class="rightAction">Activate Alert
+				<div class="rightText">
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked">
+						<label for="radio-choice-h-2a">On</label>
+						<input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" value="off">
+						<label for="radio-choice-h-2b">Off</label>
+					</fieldset>
+				</div>
+			</li>
+			<li data-role="list-divider">Withdrawl Threshold</li>
+			<li class="rightAction">Maximum amount
+				<div class="rightText"><input type="text" value="" placeholder="$0.00"></div>
+			</li>
+			<li data-role="list-divider">Set Withdrawl limit</li>
+			<li class="rightAction">Number of withdrawls
+				<div class="rightText"><input type="text" value="" placeholder="<1>"></div>
+			</li>
+			<li class="rightAction">Per
+				<div class="rightText"><input type="text" value="" placeholder="<week>"></div>
+			</li>
+			<li data-role="list-divider">Send alerts by</li>
+			<li class="rightAction">Text Alerts
+				<div class="rightText">
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<input type="radio" name="radio-choice-h-4" id="radio-choice-h-4a" value="on" checked="checked">
+						<label for="radio-choice-h-4a">On</label>
+						<input type="radio" name="radio-choice-h-4" id="radio-choice-h-4b" value="off">
+						<label for="radio-choice-h-4b">Off</label>
+					</fieldset>
+				</div>
+			</li>
+			<li class="rightAction">Push Notifications
+				<div class="rightText">
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<input type="radio" name="radio-choice-h-5" id="radio-choice-h-5a" value="on" checked="checked">
+						<label for="radio-choice-h-5a">On</label>
+						<input type="radio" name="radio-choice-h-5" id="radio-choice-h-5b" value="off">
+						<label for="radio-choice-h-5b">Off</label>
+					</fieldset>
+				</div>
+			</li>
+			<li class="rightAction">Email
+				<div class="rightText">
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<input type="radio" name="radio-choice-h-6" id="radio-choice-h-6a" value="on" checked="checked">
+						<label for="radio-choice-h-6a">On</label>
+						<input type="radio" name="radio-choice-h-6" id="radio-choice-h-6b" value="off">
+						<label for="radio-choice-h-6b">Off</label>
+					</fieldset>
+				</div>
+			</li>
+		</ul>
+		<div class="row">
+			<input type="button" data-theme="b" value="Save" />
+		</div>
+	</div>
+
+		<div data-role="panel" id="menuPanel" data-theme="b" role="navigation" data-position-fixed="true" data-animate="false">
+		</div>
+	</div>

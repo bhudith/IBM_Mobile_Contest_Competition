@@ -1,0 +1,44 @@
+<div id="billsConfirmPage" data-role="page" data-class="com/views/BillsConfirmPageView">
+
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>%title.pay.confirm%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<div data-role="content" role="main">
+		<h4>%bills.pay.confirm%</h4>
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider" class="small">%bills.account%</li>
+			<li id="billsAccount">
+			    <a href="select_account.html?accountStorageKey=selectedBillsAccount" data-transition="slide" data-rel="dialog">
+				    <div class="selectedInfo"></div>
+				</a>
+			</li>
+			<li data-role="list-divider" class="small">%bills.payee%</li>
+			<li id="billsPayee">
+			    <a href="bills_payee.html" data-transition="slide" data-rel="dialog">
+				    <div class="selectedInfo"></div>
+				</a>
+			</li>
+			<li data-role="list-divider" class="small">%transfers.confirm.amount%</li>
+			<li id="transferAmount">
+				<div class="selectedInfo"></div>
+				<div id="edit" style="display:none;">
+                     <input id="confirmAmount" class="amountInput" data-mini="true" type="text" onkeyup="value=value.replace(/[^\d\.]/g,'')"/></span>
+                </div>
+			</li>
+		</ul>
+		<div class="row">
+			<div class="col-xs-12">
+				<input id="confirmBtn" type="button" data-theme="b" value="%bills.confirm.button%" />
+			</div>
+			<div class="col-xs-12">
+				<button id="cancelBtn" data-role="button" data-theme="c">
+					%bills.cancel.button%</button>
+			</div>
+		</div>
+	</div>
+</div>

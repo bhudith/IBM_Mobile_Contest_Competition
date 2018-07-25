@@ -1,0 +1,60 @@
+#locationsPage
+{
+
+	.toggleGroup {
+		position: absolute;
+		top: 8px;
+		right: 10px;
+
+		.ui-icon-branchmaps {
+			background-image: url("@{dir-images}/locations/icon_map.png");
+			background-position: center center;
+			background-size: contain;
+			-webkit-border-radius:0;
+			border-radius:0;
+		}
+
+		.ui-icon-branchlists {
+			background-image: url("@{dir-images}/locations/icon_list.png");
+			background-position: center center;
+			background-size: contain;
+			-webkit-border-radius:0;
+			border-radius:0;
+		}
+
+		.ui-btn
+		{
+			margin:0;
+		}
+
+		.ui-btn.selected
+		{
+			background:@color-light-blue;
+		}
+	}
+
+	.locationTooltip {
+	position: relative;
+	text-align: left;
+	width: 250px;
+
+
+		h4 {
+			margin:0 0 10px 85px;
+			font-weight:bold;
+		}
+		p {
+			margin: 0 0 0 85px;
+			overflow: hidden;
+		}
+		#streetview {
+			position: absolute;
+			left: 0;
+			top: 10px;
+			width: 80px;
+		}
+		.nolink,.nolink:active {
+			text-decoration: none;
+		}
+	}
+}

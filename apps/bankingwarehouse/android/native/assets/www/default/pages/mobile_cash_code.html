@@ -1,0 +1,27 @@
+<div id="mobileCashCodePage" data-role="page" data-class="com/views/MobileCashCodePageView">
+	<div data-role="header" data-theme="b" data-position="fixed">
+		<a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>%label.mobile.cash.code%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+	
+	<div data-role="content">
+		<div class="cashCode">
+			<h3>%cash.code.tip%</h3>
+			<h1 id="cashCodeh1"></h1>
+			<div class="row"><div class="col-xs-12"><button id="shareBtn" data-theme="c">%cash.code.share.button%</button></div></div>
+			<div class="row"><span>%cash.code.time.remaining%</span><span id="timeRemain"></span></div>
+		</div>
+		<ul id="locationsMap" data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider">%locations.branch.map%</li>
+			<li>
+				<div id="map" style="width:300px;height:200px"></div>
+			</li>
+		</ul>
+		<ul id="locationsList" data-role="listview" data-inset="false"  data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider">%locations.branch.list%</li>
+		</ul>
+	</div>
+</div>

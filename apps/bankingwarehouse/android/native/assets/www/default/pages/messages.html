@@ -1,0 +1,21 @@
+<div id="messagesPage" data-role="page" data-class="com/views/MessagesPageView">
+	<div data-role="header" data-theme="b" data-position="fixed">
+		<a href="#menuPanel" data-icon="bars" data-role="button" data-iconpos="notext" data-theme="d"></a>
+		<h1>%title.messages%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<div data-role="content">
+		<ul id="messagesList" data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e" class="messagesList">
+			<li data-role="list-divider">
+					%messages.list.divider%
+					<span class="notificationBubbleSpan"></span>
+			</li>
+		</ul>
+	</div>
+	
+	<div data-role="panel" id="menuPanel" data-theme="b" role="navigation" data-position-fixed="true" data-animate="false">
+	</div>
+</div>

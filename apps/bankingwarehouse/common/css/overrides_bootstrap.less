@@ -1,0 +1,196 @@
+/*
+* Overrides CSS for Bootstrap V3
+* Last edited by Wangdong 2014.06.24
+* Ver: 1.02
+*/
+
+.row {
+	margin: 0px;
+}
+
+a:hover,a:focus{
+	text-decoration:none;
+}
+
+.form-control:focus {
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+
+/**** tabs ****/
+.nav-tabs{
+	border-bottom:0;
+
+	>li{
+		margin-bottom: 0;
+
+		>a,>a:hover,>a:focus {
+			font-weight:normal;
+			color:@color-gray-4;
+			background-color:@color-gray-1;
+			margin-right:0;
+			border-top:0;
+			border-bottom:0;
+			border-left:1px solid @color-white;
+			border-right:1px solid @color-gray-2;
+			border-radius:0;
+			padding:6px 10px;
+		}
+	}
+
+	>li:first-child{
+
+		>a,>a:hover,>a:focus{
+			border-left: 0;
+		}
+	}
+
+	>li:last-child{
+
+		>a,>a:hover,>a:focus{
+			border-right: 0;
+		}
+	}
+
+	>li.active{
+
+		>a,>a:hover,>a:focus{
+			border:0;
+			background-color:@color-light-blue;
+			color:@color-gray-5;
+			box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.25);
+		}
+	}
+}
+
+/**** table ****/
+.table-readyapps{
+
+	thead{
+
+		>tr{
+
+			>th{
+				background-color:@color-black;
+				color:@color-white;
+				border-bottom:1px solid @color-gray-2;
+			}
+
+			>th.center{
+				text-align:center;
+			}
+		}
+	}
+
+	tbody{
+
+		>tr{
+
+			>td{
+				border-top: 0;
+				border-bottom: 1px solid @color-gray-2;
+			}
+
+			>td.center{
+				text-align:center;
+			}
+		}
+	}
+}
+
+.table-readyapps.greyHeader{
+
+	thead{
+
+		>tr{
+
+			>th{
+				background-color:@color-gray-1;
+				color:@color-gray-5;
+			}
+		}
+	}
+}
+
+.table-striped{
+
+	>tbody{
+
+		>tr:nth-child(odd){
+
+			>td,>th{
+				background-color:@color-white;
+			}
+		}
+
+		>tr:nth-child(even){
+
+			>td,>th{
+				background-color:@color-gray;
+			}
+		}
+	}
+}
+
+.table-bordered{
+
+	>thead{
+
+		>tr{
+
+			>th,>td{
+				border: 1px solid @color-black;
+			}
+		}
+	}
+
+	>tbody{
+
+		>tr{
+
+			>th,>td{
+				border: 1px solid @color-gray-2;
+			}
+		}
+	}
+}
+
+/**** panel ****/
+.panel-readyapps{
+	border:0;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	border-radius:0;
+
+	>.panel-heading{
+		border-radius:0;
+		background-color:@color-gray-5;
+		color:@color-white;
+		font-weight:bold;
+		border:0;
+		padding:5px 15px;
+	}
+
+	>.panel-heading.rightElement{
+		display:table;
+		width:100%;
+
+		.panelHeaderText{
+			display:table-cell;
+			vertical-align:middle;
+		}
+
+		.panelHeaderRight{
+			float:right;
+		}
+
+		.ui-btn{
+			margin:0;
+		}
+
+	}
+
+	.panel-body{
+		padding:10px 15px;
+	}
+}

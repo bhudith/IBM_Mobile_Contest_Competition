@@ -1,0 +1,83 @@
+<div id="accountDetailsPage" data-role="page">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>Account Details</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+	<div data-role="content" role="main">
+		<div class="tip">No new messages is available.</div>
+		<div class="title">Checking ****5652 <span>$2900.00</span></div>
+		<ul class="nav nav-tabs full">
+          <li class="active"><a href="#tab1" data-toggle="tab">DETAILS</a></li>
+          <li><a href="#tab2" data-toggle="tab">ACTION</a></li>
+          <li><a href="#tab3" data-toggle="tab">ANALYSIS</a></li>
+        </ul>
+        <div class="tab-content">
+        	<div class="tab-pane active" id="tab1">
+        		<div class="refresh">
+        			<div class="content row">
+        				<img src="../images/account/down_arrow.png" alt="">
+        				<p>List Update 5:00</p><p>Pull down to refresh</p>
+        			</div>
+        		</div>
+        		<div class="refresh">
+        			<div class="content row">
+        				<img src="../images/account/up_arrow.png" alt="">
+        				<p>List Update 5:00</p><p>Release to refresh</p>
+        			</div>
+        		</div>
+        		<div class="refresh">
+        			<div class="content row">
+        				<img src="../images/account/loading.gif" alt="">
+        				<p>List Update 5:00</p><p>Checking for</p>
+        			</div>
+        		</div>
+        		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+        			<li data-role="list-divider">November 11,2013</li>
+        			<li class="text"><h3>CORNER STORE</h3><p>POS Purchase</p><div class="rightText">$(24.95)</div></li>
+        			<li class="text"><h3>PAYROLL DEPOSIT</h3><p>Deposit</p><div class="rightText">$1,500.00</div></li>
+        			<li class="text"><h3>RETAIL STORE</h3><p>POS Purchase</p><div class="rightText">$(43.02)</div></li>
+        			<li class="text"><h3>MONTHLY FEE</h3><p>Service Charge</p><div class="rightText">$(4.00)</div></li>
+        			<li data-role="list-divider">November 10,2013</li>
+        			<li class="text"><h3>WL PROPERTY</h3><p>Check<p><div class="rightText">$(950.00)</div></li>
+        			<li class="text"><h3>WITHDRAWL</h3><p>ATM WithDrawl</p><div class="rightText">$(150.00)</div></li>
+        			<li class="text"><h3>WITHDRAWL</h3><p>ATM WithDrawl</p><div class="rightText">$(200.00)</div></li>
+        		</ul>
+        		<ul class="buttonList row">
+        			<li class="active">Show All</li>
+        			<li>Credit</li>
+        			<li>Debit</li>
+        			<li>Pending</li>
+        		</ul>
+        	</div>
+
+        	<div class="tab-pane" id="tab2">
+        		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+        			<li class="mini"><a href=""><img src="../images/home/image_holder.png" alt="">Transfer</a></li>
+        			<li class="mini"><a href=""><img src="../images/home/image_holder.png" alt="">Pay</a></li>
+        			<li class="mini"><a href=""><img src="../images/home/image_holder.png" alt="">Send</a></li>
+        			<li class="mini"><a href=""><img src="../images/home/image_holder.png" alt="">Deposit</a></li>
+        			<li class="mini"><a href=""><img src="../images/home/image_holder.png" alt="">Alerts Preference</a></li>
+        		</ul>
+        	</div>
+          	<div class="tab-pane" id="tab3">
+          		<div class="chart">
+          			<p>&lt;current month&gt;&lt;another month&gt;</p>
+          			<img src="../images/account/chart.png" alt="">
+          			<div class="export">
+          				<select name="select-native-1" id="select-native-1" data-theme="e">
+          					<option value="1">current month</option>
+          					<option value="2">Q1</option>
+          					<option value="3">Q2</option>
+          					<option value="4">Q3</option>
+          				</select>
+          			</div>
+
+          			<button data-role="button" data-theme="b">Export</button>
+          		</div>
+          	</div>
+        </div>
+	</div>
+</div>

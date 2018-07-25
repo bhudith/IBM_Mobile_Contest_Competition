@@ -1,0 +1,26 @@
+<div id="mobileCashPage" data-role="page" data-class="com/views/MobileCashPageView">
+	<div data-role="header" data-theme="b" data-position="fixed">
+		<a href="#menuPanel" data-icon="bars" data-role="button" data-iconpos="notext" data-theme="d"></a>
+		<h1>%label.mobile.cash%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+	
+	<div data-role="content">
+		<p class="msg">%cash.code.title%</p>
+        <div class="atmPic"><img src="../images/mobile_cash/atm.png" alt="ATM" /></div>
+	  <ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+	  		<li id="cashAccount">
+				<a href="select_account.html?accountStorageKey=selectedCashAccount" data-transition="slide" data-rel="dialog">
+					<div class="selectedInfo">%cash.select.acccount%</div>
+				</a>
+			</li>
+            <li class="form">%cash.enter.amount%<span class="rightForm"><input id="transferAmount" class="amountInput" data-mini="true" type="text" value="" onkeyup="value=value.replace(/[^\d\.]/g,'')"/></span></li>
+		</ul>
+        <div class="row"><div class="col-xs-12"><input id="generateCodeBtn" data-theme="b" disabled="disabled" type="button" value="%cash.generate.code.button%" /></div></div>
+	</div>
+	
+    <div data-role="panel" id="menuPanel" data-theme="b" role="navigation" data-position-fixed="true" data-animate="false">
+    </div>
+</div>

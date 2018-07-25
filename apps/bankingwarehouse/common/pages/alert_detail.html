@@ -1,0 +1,40 @@
+<div id="alertDetailPage" data-role="page" data-class="com/views/AlertDetailPageView">
+	<div data-role="header" data-theme="b" data-position="fixed">
+		<a id="backBtn" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>%label.manage.alerts%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+	
+	<div data-role="content">
+    	<ul id="itemList" data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li class="form" id="threshold"><span>%alerts.preference.title%</span><span class="rightForm"><input class="amountInput" data-mini="true" type="text" value="" onkeyup="value=value.replace(/[^\d\.]/g,'')"/></span></li>
+		    <li class="form">%alerts.push.notification%
+		    	<span class="rightForm">
+		    		<form>
+							<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+								<input type="radio" data-theme="a" name="notifyEnabled" id="notifyEnabledYes" value="true">
+							    <label for="notifyEnabledYes">%alerts.notification.yes%</label>
+							    <input type="radio" data-theme="a" name="notifyEnabled" id="notifyEnabledNo" value="false">
+							    <label for="notifyEnabledNo">%alerts.notification.no%</label>
+							</fieldset>
+					</form>
+				</span>
+			</li>
+		    <li class="form">%alerts.primary.email%
+		    	<span class="rightForm">
+		    		<form>
+							<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+								<input type="radio" data-theme="a" name="emailEnabled" id="emailEnabledYes" value="true">
+							    <label for="emailEnabledYes">%alerts.notification.yes%</label>
+							    <input type="radio" data-theme="a" name="emailEnabled" id="emailEnabledNo" value="false">
+							    <label for="emailEnabledNo">%alerts.notification.no%</label>
+							</fieldset>
+					</form>
+				</span>
+			</li>
+        </ul> 
+        <input type="hidden" id="prefId" value="" data-mini="true" />   
+    </div>
+</div>

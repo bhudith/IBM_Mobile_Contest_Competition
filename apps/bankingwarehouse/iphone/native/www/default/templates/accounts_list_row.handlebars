@@ -1,0 +1,28 @@
+    <li class="ui-li ui-li-divider ui-bar-e ui-first-child" data-role="list-divider" role="heading">Account Summary</li>
+	{{#each accounts}}
+
+			{{#if this.isTotal}}			
+				{{#if this.isSummary}}
+				<li class="account {{#if this.isTotal}}total{{/if}}" data-id="{{this.accountId}}" data-category="{{this.categoryName}}">
+					{{this.sumName}}
+					{{#if this.isNegative}}
+					    <div class="rightText credit">{{this.amount}}</div>
+					{{else}}
+					    <div class="rightText deposite">{{this.amount}}</div>
+				    {{/if}}
+				{{else}}
+				<li data-id="{{this.accountId}}" data-category="{{this.categoryName}}" {{#if this.isTotal}}data-role="list-divider"{{/if}}>
+					{{this.name}}
+					<div class="rightText">{{this.amount}}</div>
+				{{/if}}
+			{{else}}
+				<li class="account {{#if this.isTotal}}total{{/if}}" data-id="{{this.accountId}}" data-category="{{this.categoryName}}" >
+				<a href="#" class="text">
+				<h3>{{this.name}}</h3>
+				<p>{{this.accountNum}}</p>
+				<div class="rightText">{{this.amount}}</div>
+				</a>
+			{{/if}}
+		
+	</li>
+	{{/each}}

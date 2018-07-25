@@ -1,0 +1,36 @@
+#checkPage
+{
+	.camera{
+		
+		.ui-btn{
+			height:auto;
+			padding:10px 40px 10px 15px;			
+			
+			 img.checkImage {
+				float:none;
+				max-width: 50%;
+				max-height: 80px;
+				position: absolute;
+				right:30px;
+				left:auto;
+			}
+		}
+		
+		.ui-icon-carat-r:after{
+			border-radius:0;
+			-webkit-border-radius:0;
+			background-image: url("@{dir-images}/check/icon_camera_grey.png");
+		 }
+	}
+	
+	.camera:active	{
+		
+		.ui-icon-carat-r:after {
+			background-image: url("@{dir-images}/check/icon_camera_white.png");
+		}
+	}
+	
+	.form{
+		text-shadow:0 /*{e-bup-shadow-x}*/ 0 /*{e-bup-shadow-y}*/ 0 /*{e-bup-shadow-radius}*/ /*{e-bup-shadow-color}*/;
+	}
+}

@@ -1,0 +1,58 @@
+<div id="splashPageSetting" data-role="page" data-class="com/views/SplashSettingsPageView">
+	<div data-role="content">
+		<h1>%label.settings%</h1>
+		<div id="onlineDiv" class="row" style="display:none">
+           <label for="online">%setting.online%</label>
+           <input type="checkbox" name="online" id="online" data-theme="e" />
+		</div>
+        <div class="row radioList">        	
+            <input class="server-setting-radios" type="radio" name="type" id="APIManger" value="api" data-theme="e">
+            <label for="APIManger">API Manager</label>
+            <div class="row">
+            	<div class="sl"><label for="API_Sever">Server</label></div>
+                <div class="si"><input class="server-setting-inputs" type="text" name="API_Sever" id="API_Sever"></div>
+                <div class="pl"><label for="API_Port">Port</label></div>
+                <div class="pi"><input class="server-setting-inputs" type="text" name="API_Port" id="API_Port"></div>
+            </div>
+            <div style="display:none">
+            <input type="radio" class="server-setting-radios" name="type" id="BlueMix" value="bluemix" data-theme="e">
+            <label for="BlueMix">BlueMix</label>
+            <div class="row">
+            	<div class="sl"><label for="Bluemix_Sever">Server</label></div>
+                <div class="si"><input class="server-setting-inputs" type="text" name="Bluemix_Sever" id="Bluemix_Sever"></div>
+                <div class="pl"><label for="Bluemix_Port">Port</label></div>
+                <div class="pi"><input class="server-setting-inputs" type="text" name="Bluemix_Port" id="Bluemix_Port"></div>
+            </div>
+            </div>
+        </div>
+		<div class="row">
+			<div class="tl">
+				<label>%setting.timeout%</label>
+			</div>
+			<div class="ti">
+                <input class="server-setting-inputs" id="timeout" type="number" placeholder="Timeout" title="Timeout" pattern="\d+(\.\d*)?"/>
+			</div>
+		</div>		
+		<div class="row" style="display:none">
+			<div class="col-xs-6">
+				<label>ServerHost: </label>
+			</div>
+			<div class="col-xs-6">
+                <input id="serverHost" type="text" placeholder="server host" title="server host"/>
+			</div>
+		</div>
+		<div class="row" style="display:none">
+			<div class="col-xs-6">
+				<label>ServerPort: </label>
+			</div>
+			<div class="col-xs-6">
+                <input id="serverPort" type="number" placeholder="server port" title="server port"/>
+			</div>
+		</div>
+		<div class="row">
+			<button id="saveBtn" data-theme="b">%label.save%</button>
+			<button id="resetBtn" data-theme="c">%label.reset%</button>
+			<a href="#" data-role="button" data-theme="c" data-rel="back">%label.cancel%</a>
+		</div>
+	</div>
+</div>

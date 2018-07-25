@@ -1,0 +1,237 @@
+/**** colours ****/
+@color-green: #018282;
+@color-light-blue: #00b2ef;
+@color-blue: #00649d;
+@color-dark-blue: #004266;
+@color-orange: #ff7a01;
+@color-yellow: #ffcf01;
+@color-red: #D9182D;
+@color-black: #000000;
+@color-white: #ffffff;
+@color-gray: #f6f6f6;
+@color-gray-1: #eeeff3;
+@color-gray-2: #c8c8d2;
+@color-gray-3: #757575;
+@color-gray-4: #656162;
+@color-gray-5: #414141;
+@color-text-shadow: #2e2e2f;
+
+/**** string constants ****/
+@dir-images: "../images";
+@dir-theme-images: "../themes/ibm_ready_apps_1.4.2/images/icons-png";
+
+/**** size constants ****/
+@size-desktop: 1200px;
+@size-tablet: 767px;
+@size-phone: 480px;
+
+/**** import all other css / less files ****/
+@import "overrides_jqm_1.4.2.less";
+@import "overrides_bootstrap.less";
+@import "widgets_1.4.2.less";
+@import "ibm_splash.less";
+@import "splash_setting.less";
+@import "login.less";
+@import "home.less";
+@import "message.less";
+@import "accounts.less";
+@import "select_account.less";
+@import "view_check.less";
+@import "side_menu.less";
+@import "transactions.less";
+@import "markets.less";
+@import "check.less";
+@import "check_confirm.less";
+@import "check_final.less";
+@import "bills.less";
+@import "bills_confirm.less";
+@import "bills_final.less";
+@import "transfers.less";
+@import "transfers_final.less";
+@import "transfers_confirm.less";
+@import "locations.less";
+@import "contact.less";
+@import "image_check.less";
+@import "alert_detail.less";
+@import "goals.less";
+@import "spending_by_category.less";
+@import "mobile_cash.less";
+@import "mobile_cash_code.less";
+@import "check_error.less";
+@import "money.less";
+@import "security_preferences.less";
+@import "new_authentication.less";
+@import "initial_voice_setup.less";
+@import "initial_signature_setup.less";
+@import "initial_signature_second.less";
+@import "initial_facial_recognition_setup.less";
+@import "user_preferences.less";
+@import "preview_balance.less";
+@import "multiple_devices.less";
+@import "account_details.less";
+
+/**** fonts ****/
+/*
+@font-face {
+	font-family: GothamCondensedLight;
+	font-weight: normal;
+	src: url('@{dir-fonts}/GothamCond-Light.otf');
+}
+*/
+
+/**** fix for css conflicts for google maps ****/
+.map img {
+	max-width: none;
+	height: auto
+}
+
+.map * {
+	box-sizing: content-box;
+}
+/****************************/
+
+/* Worklight container div */
+* {
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#content {
+	position: relative;
+	font-size: 16px;
+	text-shadow: none;
+	height: 100%;
+}
+
+.ui-page {
+	min-height: 100%;
+	z-index: 1;
+	text-shadow: none;
+	background: white;
+	padding: 0px;
+
+	/*hardware accleration*/
+	// transform: translateZ(0);
+	/*backface-visibility: hidden;  */
+	// perspective: 1000;
+}
+
+.ui-content {
+
+	h1{
+		font-size: 24px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h3, h4, h5, h6{
+		font-size: 16px;
+	}
+	/**** split Line ****/
+	hr {
+		margin:0 -15px;
+		border-top:1px solid @color-gray-2;
+	}
+}
+
+/* ready bank common styles */
+.rightText{
+	position:absolute;
+	top:50%;
+	right:30px;
+	margin-top:-.6em;
+}
+
+.alertInfo {
+	margin:10px 0;
+
+	img {
+		float:left;
+	}
+
+	h2 {
+		margin:0 0 6px 80px;
+	}
+
+	p {
+		margin:2px 0 0 80px;
+	}
+
+}
+
+div.selectedInfo {
+	span.name {
+		display:block;
+		font-size:16px;
+		font-weight:bold;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	span.number {
+		display:block;
+		font-size:12px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	span.balance {
+		display:block;
+		font-size:16px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+}
+
+/**** Amount input****/
+input.amountInput{
+	text-align:right;
+	background:url("@{dir-images}/amount.png") no-repeat 10px center ;
+	background-size:auto 45%;
+}
+
+input.amountInput::-webkit-input-placeholder{
+	text-align:right;
+}
+
+/**** toggle button ****/
+.ui-controlgroup {
+	margin: 0;
+	display: inline-block;
+
+	.ui-radio {
+		label {
+			font-weight: normal;
+		}
+		.ui-btn {
+			font-size: 14px;
+			padding: 6px 10px;
+		}
+	}
+}
+
+.ui-listview .rightAction.ui-li-static {
+	padding: 15px;
+
+	.rightText {
+		top: 18%;
+		right: 10px;
+
+		.ui-input-text {
+			width: 40%;
+			float: right;
+		}
+		.ui-controlgroup {
+			margin: .6em 0;
+
+			.ui-radio {
+				label {
+					color: @color-white;
+				}
+			}
+		}
+	}
+}

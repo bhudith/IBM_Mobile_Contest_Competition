@@ -1,0 +1,11 @@
+{{#each payees}}
+	
+		<li class="payee" data-id="{{this.payeeId}}">
+			<a href="#">
+				<h3>{{this.payeeName}}</h3>
+				<p>{{this.payeeNum}}</p>
+				<p>{{this.amount}}</p>
+			</a>
+		</li>
+
+{{/each}}

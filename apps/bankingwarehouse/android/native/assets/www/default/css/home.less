@@ -1,0 +1,122 @@
+#homePage{
+
+	#homeContainer{
+		padding:0;
+		margin-top:15px;
+	}
+
+	#accountName	{
+		font-size: 35px;
+		line-height: 35px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-weight: lighter;
+	}
+
+	#accountNumber	{
+		font-weight: normal;
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	.ui-listview{
+		// margin:0;
+		.collapsible {
+			padding: 0;
+		}
+		.withUrgent{
+
+			.notificationBubble{
+				right: 90px;
+			}
+		}
+		.addnew .ui-icon-carat-r:after {
+			background-image: url("@{dir-images}/theme_overrides/icon_add.png");
+		}
+	}
+	.ui-collapsible-heading .ui-btn {
+		border-bottom-width: 0;
+		border-right-width: 0;
+		border-left-width: 0;
+	}
+	.ui-collapsible-content {
+		background: transparent;
+		box-shadow: none;
+		border-top: 1px solid @color-gray-2;
+	}
+	.ui-collapsible:first-child {
+		.ui-collapsible-heading .ui-btn {
+			border-top-width: 0;
+		}
+	}
+	.actionlist {
+		margin: 10px -10px;
+		padding: 0;
+		list-style: none;
+
+		li {
+			float: left;
+			margin: 0 8px;
+			text-align: center;
+			width: 44px;
+			font-size: 12px;
+		}
+	}
+	.featuresList {
+		border: 1px solid @color-gray-2;
+		float: left;
+		width: 30%;
+		margin: 10px 1.5%;
+		padding: 10px;
+		height: 105px;
+		text-align: center;
+		white-space: normal;
+		img {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 8px;
+		}
+	}
+	.big.ui-li-has-thumb {
+		.ui-btn {
+			img {
+				left: 8px;
+				top: 8px;
+			}
+			p {
+				white-space: normal;
+			}
+
+		}
+
+	}
+	.mini.ui-li-has-thumb {
+		.ui-btn {
+			min-height: 55px;
+			padding-left: 55px;
+			line-height: 30px;
+
+			.notificationBubble {
+				top: 15px;
+				left: 35px;
+				right: auto;
+			}
+
+			img {
+				top: 10px;
+				left: 10px;
+			}
+		}
+
+	}
+	#accidentBtnWrapper {
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		bottom: 0px;
+		left: 0px;
+		background: @color-white;
+		padding: 10px 0px;
+	}
+
+}

@@ -1,0 +1,44 @@
+<div id="loginPage" data-role="page" data-class="com/views/LoginPageView" data-theme="d">
+	<div data-role="content">
+		<div class="row">
+			<div class="row">
+				<div id="logo">
+					<img src="../images/home/logo_ibm.png" alt="ibm_logo"/>
+				</div>
+			</div>
+			<div class="row">
+					<h1>%login.sector%</h1>
+			</div>
+			<div class="row">
+					<h2>%login.readyapp%</h2>
+			</div>
+			<div class="row">
+				<div id="errorMessage" style="visibility: hidden">
+					<span>%login.errorMessage%</span>
+				</div>
+			</div>
+			<div class="row">
+					<input id="username" type="email" value="%default.username%" title="username"/>
+			</div>
+			<div class="row">
+					<input id="password" type="password" value="%default.password%" title="password"/>
+			</div>
+			<div id="loggedInRow" class="row checkboxList">
+					<input type="checkbox" name="keepLoggedIn" id="keepLoggedIn" data-theme="e" checked="checked"/>
+					<label for="keepLoggedIn">%login.keeplogin%</label>
+			</div>
+			<div id="signinButtonRow" class="row">
+					<button id="signinBtn" data-role="button" data-theme="b">%label.signin%</button>
+			</div>
+			<div id="forgotPasswordRow" class="row">
+					<a id="forgotPasswordBtn" href="#">%login.forgotpassword%</a>
+			</div>
+			<div id="registerRow" class="row">
+					<a id="registerBtn" href="#">%label.register%</a>
+			</div>
+			<div id="settingsRow" class="row">
+					<a id="settingsBtn" href="splash_setting.html">%login.setting%</a>
+			</div>
+		</div>
+	</div>
+</div>

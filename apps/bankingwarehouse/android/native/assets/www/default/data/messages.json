@@ -1,0 +1,49 @@
+[
+	{
+		"messageId" : "0000001",
+		"subject" : "Sign up for Rewards",
+		"date" : "Thurs, February 06, 2014",
+		"content" : "....",
+        "requiredAction" : false,
+        "isRead" : false
+	},
+	
+	{
+		"messageId" : "0000002",
+		"subject" : "Your January Statement is Ready",
+		"date" : "Mon, January 20, 2014",
+		"content" : "....",
+        "requiredAction" : false,
+        "isRead" : false
+	},
+	
+	{
+		"messageId" : "0000003",
+		"subject" : "Checking Account Information",
+		"date" : "Fri, December 27, 2013",
+		"content" : "....",
+        "requiredAction" : true,
+        "isRead" : true
+	},
+	
+	
+	{
+		"messageId" : "0000004",
+		"subject" : "Your December Statement is Ready",
+		"date" : "Tues, December 10, 2013",
+		"content" : "....",
+        "requiredAction" : false,
+        "isRead" : true
+	},
+	
+	{
+		"messageId" : "0000005",
+		"subject" : "Welcome to Banking Co.",
+		"date" : "Mon, October 30, 2013",
+		"content" : "Hi and welcome to Banking Co., this is an all-in-one app for managing your account.",
+        "requiredAction" : true,
+        "isRead" : false
+	}
+
+
+]

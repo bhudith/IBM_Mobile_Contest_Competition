@@ -1,0 +1,363 @@
+/*
+* UI widgets for JQM 1.4.2
+* Last edited by WangDong 2014.04.23
+* Ver: 1.06
+*/
+
+
+/**** Radio and Checkbox List ****/
+.radioList{
+	
+	.ui-radio{
+		
+		.ui-btn{
+			border:0;
+			padding:4px 15px 4px 28px;
+		}
+		
+		.ui-btn-icon-left:after{
+			left:0;
+		}
+		
+		input{
+			left:0;
+		}
+	}	
+}
+
+.checkboxList{
+	
+	.ui-checkbox{
+		
+		.ui-btn{
+			border:0;
+			padding:4px 15px 4px 28px;
+		}
+		
+		.ui-btn-icon-left:after{
+			left:0;
+		}
+		
+		input{
+			left:0;
+		}
+	}	
+}
+
+/**** Messages List ****/
+.messagesList.ui-listview.ui-group-theme-e{
+
+	.ui-li-divider{
+		
+		.notificationBubble {
+			 position:static;
+			 margin:0 0 0 5px;
+		}
+	}
+
+	.ui-btn.ui-btn-icon-right{
+		font-weight:normal;
+		padding-left:35px;
+
+		h3 {
+			font-weight:normal;
+		}
+
+		p {
+			font-weight:normal;
+		}
+	}
+
+	.unRead{
+		
+		.ui-btn.ui-btn-icon-right{
+			padding-left:35px;
+			padding-right:100px;
+			font-weight:bold;			
+		
+			h3 {
+				font-weight:bold;
+			}
+	
+			p {
+				font-weight:bold;
+			}
+			
+			.unreadBubble{
+				position:absolute;
+				z-index:9;
+				width:12px;
+				height:12px;
+				left:15px;
+				top:50%;
+				margin-top: -6px;
+				background: @color-light-blue;
+				box-shadow: -2px 0 5px rgba(0,0,0,.25);
+				-webkit-box-shadow: -2px 0 5px rgba(0,0,0,.25);				
+				border-radius: 6px;
+				-webkit-border-radius: 6px;			
+			}
+		}
+		
+		.ui-btn.ui-btn-icon-right:active{
+			
+			.unreadBubble{
+				background: @color-white;
+			}
+		}
+	}
+}
+
+.notificationBubble {
+	position: absolute;
+	z-index:9;
+	min-width:16px;
+	height:16px;
+	line-height:16px;
+	right: 30px;
+	top: 50%;
+	margin-top: -8px;	
+	padding:0 4px;
+	font-size: 12px;
+	font-weight: bold;
+	color:@color-white;
+	text-shadow:none;
+	text-align: center;
+	letter-spacing: 0;
+	background: @color-light-blue;
+	border-radius: 10px;
+	-webikit-border-radius: 10px;
+	box-shadow: -2px 0 5px rgba(0,0,0,.25);
+	-webkit-box-shadow: -2px 0 5px rgba(0,0,0,.25); 
+}
+
+.urgentBubble{
+	position: absolute;
+	z-index:9;
+	height:16px;
+	line-height:16px;
+	top: 50%;
+	margin-top: -8px;
+	right: 30px;
+	padding:0 4px;	 
+	font-size: 11px;
+	font-weight: bold;
+	color:@color-white;
+	text-shadow:none;
+	text-align: center;
+	letter-spacing: 0;
+	background: @color-red;
+	box-shadow: -2px 0 5px rgba(0,0,0,.25);
+	-webkit-box-shadow: -2px 0 5px rgba(0,0,0,.25);
+}
+
+/**** Small Grey Button ****/
+.greyBtn{
+	display: inline-block;
+	height:26px;
+	line-height:26px;
+	font-size:15px;
+	font-weight:bold;
+	color:@color-white;
+	background:@color-gray-3;
+	border:1px solid @color-gray-5;
+	padding:0 10px;
+	text-shadow:0 1px 0 @color-text-shadow;
+}
+
+/**** Full Screen Popover ****/
+.fullScreenPopover{
+
+	.ui-header{
+		background:@color-gray-4;			
+		
+		.greyBtn{
+			top: 50%;
+			margin-top:-13px;
+			.greyBtn;
+		}
+	}
+
+	.ui-content{
+		border:0;
+		padding:0 15px;
+		background:@color-white;
+	}
+	
+	.ui-dialog-contain{
+		position: absolute;
+	    top: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	    max-width: 100%;	    
+	}
+	
+	.ui-overlay-shadow {
+	    -webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
+	}
+}
+
+/**** Filter Panel ****/
+.filterPanel{
+	margin: 0;
+
+	.ui-collapsible-heading{
+		margin:0;
+
+		.ui-collapsible-heading-toggle {
+			display: block;
+			border:0;
+			background:@color-gray-4;
+			font-size:14px;
+			color:@color-white;
+			text-shadow:none;
+			padding:10px 15px 10px 40px;	
+		}
+		
+		.ui-btn-icon-left:after{
+			width:18px;
+			height:18px;
+			background-size:auto 100%;
+			border-radius:0;
+			-webkit-border-radius:0;
+			left:15px;
+			margin-top:-9px;
+		}
+		
+	   .ui-icon-plus:after{	
+			background-image: url("@{dir-images}/theme_overrides/icon_filter_collapsible.png");		
+			background-position:0 0;					
+		}
+
+		.ui-icon-minus:after{
+			background-image: url("@{dir-images}/theme_overrides/icon_filter_collapsible.png");
+			background-position:-18px 0;
+		}
+	}
+
+	.ui-collapsible-content{
+		margin:0;
+		padding:0 15px 8px;
+		background:@color-gray-4;
+
+		.filterContent{
+			background:@color-white;
+			padding:5px;
+		}
+
+		.filterBtn{
+			margin-top:8px;
+			text-align:right;
+			
+			.greyBtn{
+				.greyBtn;
+			}
+		}
+	}
+}
+
+/**** Date Picker****/
+.date {
+	
+	.ui-input-text.ui-shadow-inset{
+		border:1px solid @color-gray-2;
+		margin:0;
+		background: @color-white;
+		border-radius: 4px 0 0 4px;
+		-webkit-border-radius: 4px 0 0 4px;
+		
+		input{
+			border-radius: 3px 0 0 3px;
+		}
+	}
+
+	.input-group-addon {
+		border-radius: 0 4px 4px 0;
+		-webkit-border-radius: 0 4px 4px 0;
+	}
+}
+
+/**** Right Element in Listview ****/
+.ui-listview {
+	
+  .form.ui-li-static{
+		padding:12px 50% 12px 15px;
+
+		.rightForm{
+			position:absolute;
+			width:45%;
+			top:50%;
+			right:15px;
+			margin-top:-16px;		
+
+			.ui-btn,.ui-controlgroup,.ui-input-text,.ui-select{
+				margin:0;
+			}
+			
+			.date,.ui-select{
+				margin-top:-2px;
+			}
+		}
+	}
+	
+	.text.ui-li-static{
+		padding-right:40%;
+
+		.rightText{
+			position:absolute;
+			width:35%;
+			top:50%;
+			right:15px;
+			margin-top:-8px;
+			text-align:right;
+		}
+	}
+	
+	.text.ui-btn.ui-btn-icon-right{
+		padding-right:40%;
+
+		.rightText{
+			position:absolute;
+			width:35%;
+			top:50%;
+			right:30px;
+			margin-top:-8px;
+			text-align:right;
+		}
+	}
+}
+
+/**** LinkBar ****/
+#sorter{
+	position: fixed;
+	top: 42px;
+	right: 0;
+	width: 20px;
+	z-index: 1;
+	
+	ul{
+		height: 100%;
+		
+		.ui-li-static {
+			height: 3.846%;
+			padding: 0;
+			font-size: 9px;
+			padding-left: 5px;
+			line-height: 1.8em;
+		}
+		
+		.ui-li-static:active {
+			height:auto;
+			background-color:@color-light-blue;
+			background-image:none;
+			color: @color-gray-5;
+			font-size:16px;
+			font-weight:bold;
+			padding-top:6px;
+			padding-bottom:6px;
+		}
+	}
+}

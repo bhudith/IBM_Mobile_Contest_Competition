@@ -1,0 +1,32 @@
+[{
+	"accountId": "0000001",
+	"accountNum": "**********3911",
+	"accountName": "Infinity",
+	"balance": 4835,
+	"category": 1
+},{
+	"accountId": "0000002",
+	"accountNum": "**********3912",
+	"accountName": "Value Plus",
+	"balance": 2640,
+	"category": 1
+},{
+	"accountId": "0000003",
+	"accountNum": "**********3913",
+	"accountName": "Everyday Savings",
+	"balance": 9790,
+	"category": 1
+},{
+	"accountId": "0000004",
+	"accountNum": "**********3914",
+	"accountName": "First Class Travel",
+	"balance": -6570,
+	"category": 0
+},{
+	"accountId": "0000005",
+	"accountNum": "**********3915",
+	"accountName": "Line of Credit",
+	"balance": -800,
+	"category": 0
+}
+]

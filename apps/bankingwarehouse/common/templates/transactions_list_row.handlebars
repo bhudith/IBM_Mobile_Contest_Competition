@@ -1,0 +1,18 @@
+{{#each transactions}}
+	
+		<li class="transaction" data-id="{{this.id}}" data-datetime="{{this.datetime}}" data-is-check="{{this.isCheck}}">
+			{{#if this.isCheck}}
+			  <a href="#">
+				<h3>{{this.name}}</h3>
+				<p>{{this.memo}}</p>
+				<div class="rightText">{{this.amount}}</div>
+			  </a>
+			{{else}}
+			  <h3>{{this.name}}</h3>
+				<p>{{this.memo}}</p>
+				<div class="rightText">{{this.amount}}</div>
+			{{/if}}	
+		</li>
+	
+{{/each}}
+

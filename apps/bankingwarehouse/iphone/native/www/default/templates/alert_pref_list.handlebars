@@ -1,0 +1,14 @@
+
+	{{#if isAccountSelected}}
+    <li data-role="list-divider">%alerts.specify.preferences%</li>
+
+	{{#each alertPrefs}}		
+			 <li data-id="{{this.prefId}}" data-param="{{this.param}}" data-notify-enabled="{{this.notifyEnabled}}" data-email-enabled="{{this.emailEnabled}}" class="preference {{#if this.editable}}editable{{else}}eneditable{{/if}}"><a href="#"><p>{{this.title}}</p><p>{{#if this.enabled}}%alerts.preference.on%{{else}}%alerts.preference.off%{{/if}}</p></a></li>	
+	{{/each}}
+	{{else}}
+	   <li data-role="list-divider">%alerts.specify.preferences%</li>
+      			
+			 <li class="preference eneditable"><p>Balance is below ____</p></li>
+			 <li class="preference eneditable"><p>Account is overdrawn</p></li>		
+       
+	{{/if}}

@@ -1,0 +1,15 @@
+[{
+	"prefId": "0000001",
+	"title": "Balance is below {0}",
+	"param" : "1000.00", 
+	"notifyEnabled": false,
+	"emailEnabled": false,
+	"editable": true
+},{
+	"prefId": "0000002",
+	"title": "Account is overdrawn",
+	"notifyEnabled": true,
+	"emailEnabled": true,
+	"editable": false
+  }
+]

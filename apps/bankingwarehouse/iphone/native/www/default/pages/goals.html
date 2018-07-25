@@ -1,0 +1,36 @@
+<div id="goalsPage" data-role="page" data-class="com/views/GoalsPageView">
+	<div data-role="header" data-theme="b" data-position="fixed">
+		<a href="#menuPanel" data-icon="bars" data-role="button" data-iconpos="notext" data-theme="d"></a>
+		<h1>%title.goals%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+			<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<div data-role="content">
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider">%goals.my.goals%</li>
+		</ul>
+		<div data-role="collapsible-set" data-inset="false" data-theme="e" data-content-theme="e">
+			<div class="undone" data-role="collapsible">
+				<h3>%goals.credit.card% <span class="statusIcon"><img src="../images/goals/statusAlert.png" alt="" /></span></h3>
+			</div>
+			<div data-role="collapsible">
+				<h3>%goals.save.vacation% <span class="statusIcon"><img src="../images/goals/statusSuccess.png" alt="" /></span></h3>
+				<p class="contentTitle"><img src="../images/goals/statusSuccess.png" alt="" /> %goals.status.ontrack%</p>
+				<ul class="contentList">
+					<li>%goals.contribution.label% <span>$210</span></li>
+					<li>%goals.date.label% <span>%goals.date.value%</span></li>
+				</ul>
+				<div class="row"><div class="col-xs-12"><button id="editBtn" data-theme="c">%goals.edit.button%</button></div></div>
+			</div>
+			<div class="undone" data-role="collapsible">
+				<h3>%goals.save.retirement% <span class="statusIcon"><img src="../images/goals/statusCaution.png" alt="" /></span></h3>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><button id="addBtn" data-theme="b">%goals.add.button%</button></div></div>
+	</div>
+	
+	<div data-role="panel" id="menuPanel" data-theme="b" role="navigation" data-position-fixed="true" data-animate="false">
+	</div>
+</div>

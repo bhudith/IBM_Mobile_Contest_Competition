@@ -1,0 +1,28 @@
+<div id="manageAlertsPage" data-role="page" data-class="com/views/ManageAlertsPageView">
+	<div data-role="header" data-theme="b" data-position="fixed">
+		<a href="#menuPanel" data-icon="bars"  data-role="button" data-iconpos="notext" data-theme="d">
+			 <span aria-hidden="true">MenuPanel</span>
+		</a>
+		<h1>%label.manage.alerts%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<div data-role="content">
+		<ul id="prefAccount" data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider">%alerts.select.account%</li>
+	           <li class="account"><a href="select_account.html?accountStorageKey=selectedAlertSettingAccount">
+		       <div class="selectedInfo">%alerts.select.account%</div>
+	           </a></li>
+	         </ul>
+		<ul id="prefList" data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+	         <li data-role="list-divider">%alerts.specify.preferences%</li>
+			 <li class="preference eneditable"><p>Balance is below ____</p></li>
+			 <li class="preference eneditable"><p>Account is overdrawn</p></li>	
+		</ul>
+	</div>
+
+	<div data-role="panel" id="menuPanel" data-theme="b" role="navigation" data-position-fixed="true" data-animate="false">
+	</div>
+</div>

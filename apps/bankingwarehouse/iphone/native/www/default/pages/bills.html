@@ -1,0 +1,46 @@
+<div id="billsPage" data-role="page" data-class="com/views/BillsPageView">	
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a href="#menuPanel" data-icon="bars" data-role="button" data-iconpos="notext" data-theme="d">
+		   <span aria-hidden="true">MenuPanel</span>		
+		</a>
+		<h1>%title.pay.bills%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+	
+	<div data-role="content" role="main">
+		<h4>%bills.pay.from%</h4>
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider" class="small">%bills.account%</li>
+			<li id="billsAccount">
+				<a href="select_account.html?accountStorageKey=selectedBillsAccount" data-transition="slide" data-rel="dialog">
+					<div class="selectedInfo">%bills.select.account%</div>
+				</a>
+			</li>
+			<li data-role="list-divider" class="small">%bills.payee%</li>
+			<li id="billsPayee">
+				<a href="bills_payee.html" data-transition="slide" data-rel="dialog">
+					<div class="selectedInfo">%bills.select.payee%</div>
+				</a>
+			</li>
+			<li class="form">%cash.enter.amount%
+				<span class="rightForm">
+					<input class="amountInput" data-mini="true" id="transferAmount" type="text" value="" onkeyup="value=value.replace(/[^\d\.]/g,'')"/>
+				</span>
+			</li>
+		</ul>
+		<div class="row">
+			<div class="col-xs-12">
+				<input id="transferBtn" type="button" data-theme="b" disabled="disabled" value="%bills.pay.button%" />
+			</div>
+			<div class="col-xs-12">
+				<button id="cancelBtn" data-role="button" data-theme="c">
+					%bills.cancel.button%</button>
+			</div>			
+		</div>
+	</div>
+	
+    <div data-role="panel" id="menuPanel" data-theme="b" role="navigation"  data-position-fixed="true" data-animate="false">
+    </div>
+</div>

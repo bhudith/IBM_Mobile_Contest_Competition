@@ -1,0 +1,35 @@
+#menuPanel
+{
+	
+	.ui-listview.ui-group-theme-e{		
+				
+		.sbLogout	{			
+			position:fixed;
+			bottom:0;
+			width:272px;			
+			z-index:1000;
+			
+			.ui-btn{
+				font-weight:bold;
+				background:@color-gray-1;	
+			}
+			
+			.ui-btn:active{
+				-webkit-box-shadow:none;
+				box-shadow:none;
+			}
+			
+			.ui-icon-carat-r:after{
+				display:block;
+			}
+		}
+		
+		/*for list contain logout*/
+		li:nth-last-child(2){
+			
+			.ui-btn{
+				border-bottom-width:1px;
+			}
+		}
+	}
+}

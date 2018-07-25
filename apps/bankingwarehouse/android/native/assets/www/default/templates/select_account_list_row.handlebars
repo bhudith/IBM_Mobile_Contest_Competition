@@ -1,0 +1,11 @@
+{{#each accounts}}
+	
+		<li class="account" data-id="{{this.accountId}}" data-num="{{this.accountNum}}">
+			<a href="#" class="text">
+				<h3>{{this.name}}</h3>
+				<p>{{this.accountNum}}</p>
+				<div class="rightText">{{this.amount}}</div>
+			</a>
+		</li>
+
+{{/each}}

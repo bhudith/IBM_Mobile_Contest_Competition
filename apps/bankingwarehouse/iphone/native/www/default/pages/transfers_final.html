@@ -1,0 +1,45 @@
+<div id="transfersFinalPage" data-role="page" data-class="com/views/TransfersFinalPageView">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<h1>%title.transfer.complete%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d" class="ui-btn-right">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+	
+	<div data-role="content" role="main">
+		<div class="alertInfo">
+				<img src="../images/place_holder.png"/>
+				<h2>%transfers.transfer.confirmed%</h2>
+				<p>%transfers.transfer.confirmed.info%</p>
+				<p id="transferTime"></p>
+		</div>
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider" class="small">%transfers.transfer.from%</li>
+			<li id="transferFrom">
+				<div class="selectedInfo"></div>
+			</li>
+			<li data-role="list-divider" class="small">%transfers.transfer.to%</li>
+			<li id="transferTo">
+				<div class="selectedInfo"></div>
+			</li>
+			<li data-role="list-divider" class="small">%confirm.final.amount%</li>
+			<li id="transferAmount">
+				<div class="selectedInfo"></div>
+			</li>
+		</ul>
+		<div class="row">
+			<div class="col-xs-12">
+				<button id="transferMoreBtn" data-role="button" data-theme="b">
+					%transfers.transfer.more.button%</button>
+			</div>
+			<div class="col-xs-12">
+				<button id="transferRecurBtn" data-role="button" data-theme="c">
+					%transfers.transfer.recur.button%</button>
+			</div>
+			<div class="col-xs-12">
+				<button id="returnHomeBtn" data-role="button" data-theme="c">
+					%transfers.return.home.button%</button>
+			</div>
+		</div>
+	</div>
+</div>

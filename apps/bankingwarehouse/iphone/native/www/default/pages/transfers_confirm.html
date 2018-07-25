@@ -1,0 +1,43 @@
+<div id="transfersConfirmPage" data-role="page" data-class="com/views/TransfersConfirmPageView">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>%title.transfer.confirm%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<div data-role="content" role="main">
+		<h4>%transfers.transfer.confirm%</h4>
+        <ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider" class="small">%transfers.transfer.from%</li>
+			<li id="transferFrom">
+				<a href="select_account.html?accountStorageKey=selectedTransfersFromAccount&accountStorageFilterKey=selectedTransfersToAccount" data-transition="slide" data-rel="dialog">
+					<div class="selectedInfo">%transfers.select.account%</div>
+				</a>
+			</li>
+			<li data-role="list-divider" class="small">%transfers.transfer.to%</li>
+			<li id="transferTo">
+				<a href="select_account.html?accountStorageKey=selectedTransfersToAccount&accountStorageFilterKey=selectedTransfersFromAccount" data-transition="slide" data-rel="dialog">
+					<div class="selectedInfo">%transfers.select.account%</div>
+				</a>
+			</li>
+            <li data-role="list-divider" class="small">%confirm.final.amount%</li>
+            <li id="transferAmount">
+                <div class="selectedInfo"></div>
+                <div id="edit" style="display:none;">
+                <input id="confirmAmount" class="amountInput" data-mini="true" type="text" onkeyup="value=value.replace(/[^\d\.]/g,'')"/></span>
+                </div>
+            </li>
+		</ul>
+		<div class="row">
+			<div class="col-xs-12">
+				<input id="confirmBtn" type="button" data-theme="b" value="%transfers.confirm.button%" />
+			</div>
+			<div class="col-xs-12">
+				<button id="cancelBtn" data-role="button" data-theme="c">
+					%transfers.cancel.button%</button>
+			</div>
+		</div>
+	</div>
+</div>

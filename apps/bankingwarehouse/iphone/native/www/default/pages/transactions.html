@@ -1,0 +1,35 @@
+<div id="transactionsPage" data-role="page" data-class="com/views/TransactionsPageView">
+	<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" role="banner">
+		<a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>%title.accounts%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d"><span aria-hidden="true">HomePage</span></a>
+	</div>
+
+	<div data-role="content" role="main">
+		<div id="accountInfo" data-role="none" ></div>
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li id="category"><a>%transactions.spending.by.category%</a></li>
+		</ul>
+
+		<ul id="transactionsList" data-role="listview" data-autodividers="true" data-inset="false" data-theme="e" data-divider-theme="e"></ul>
+	</div>
+
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+		<div data-role="collapsible" data-inset="false" class="filterPanel">
+			<h3>Filter</h3>
+			<div class="filterContent">
+				<div class="radioList">
+					<input type="radio" name="filter" id="filter1" data-theme="e" value="All Transactions" checked="checked" />
+					<label for="filter1">All Transactions</label>
+					<input type="radio" name="filter" id="filter2" data-theme="e" value="Credits"/>
+					<label for="filter2">Credits</label>
+					<input type="radio" name="filter" id="filter3" data-theme="e" value="DebitsDebits"/>
+					<label for="filter3">Debits</label>
+				</div>
+			</div>
+			<div class="filterBtn">
+				<a id="filterBtn" class="greyBtn"  data-role="none">Update</a>
+			</div>
+		</div>
+	</div>
+</div>

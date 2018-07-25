@@ -1,0 +1,33 @@
+#marketsPage
+{
+
+	div[data-role=content] {
+		padding: 0px;
+	}
+
+	#chartContainer{
+		width:100%;
+		font-size:12px;
+	}
+
+	.ui-listview[data-theme=e] li.selectedInvesment{
+		background:@color-white;
+		-moz-animation:listAnimation 2s;
+		-webkit-animation:listAnimation 2s;
+	}
+
+	@-moz-keyframes listAnimation
+	{
+		0% {background:@color-white;}
+		50% {background:#ffc600;}
+		100% {background:@color-white;}
+	}
+
+	@-webkit-keyframes listAnimation
+	{
+		0% {background:@color-white;}
+		50% {background:#ffc600;}
+		100% {background:@color-white;}
+	}
+
+}

@@ -1,0 +1,44 @@
+<div id="moneyConfirmPage" data-role="page" data-class="com/views/MoneyConfirmPageView">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<a data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-theme="d">%label.back%</a>
+		<h1>%title.money.confirm%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+	
+	<div data-role="content" role="main">
+		<h4>%title.money.confirm%</h4>
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider" class="small">%money.from%</li>
+			<li id="moneyAccount">
+				<a href="select_account.html?accountStorageKey=selectedMoneyAccount" data-transition="slide" data-rel="dialog">
+					<div class="selectedInfo">%money.send.from%</div>
+				</a>
+			</li>
+			<li data-role="list-divider" class="small">%money.to%</li>
+			<li id="moneyPayee">
+				<a href="money_payee.html?onSelectToPage=money_confirm.html" data-transition="slide" data-rel="dialog">
+					<div class="selectedInfo">%money.send.to%</div>
+				</a>
+			</li>
+			<li data-role="list-divider" class="small">%confirm.final.amount%</li>
+            <li id="transferAmount">
+                <div class="selectedInfo"></div>
+                <div id="edit" style="display:none;">
+                <input id="confirmAmount" class="amountInput" data-mini="true" type="text" onkeyup="value=value.replace(/[^\d\.]/g,'')"/></span>
+                </div>
+            </li>
+		</ul>
+		<div class="row">
+			<div class="col-xs-12">
+				<input id="confirmBtn" type="button" data-theme="b" value="%money.confirm.button%" />
+			</div>
+			<div class="col-xs-12">
+				<button id="cancelBtn" data-role="button" data-theme="c">
+					%money.cancel.button%
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

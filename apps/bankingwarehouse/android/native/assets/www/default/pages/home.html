@@ -1,0 +1,72 @@
+<div id="homePage" data-theme="a" data-role="page" data-class="com/views/HomePageView">
+	<div data-role="header" data-theme="b" data-position="inline" role="banner">
+		<a href="#menuPanel" data-icon="bars" data-role="button" data-iconpos="notext" data-theme="d">
+		   <span aria-hidden="true">MenuPanel</span>		
+		</a>
+		<h1>%label.company.name%</h1>
+	</div>
+	
+	<div data-role="content" role="main">
+		<div class="col-xs-12" id="homeContainer">
+			<ul id="functionlist" data-role="listview" data-inset="false" data-theme="d">
+					 <li id="messages">
+						<a href="messages.html">
+							%label.messages%
+							<span class="notificationBubbleSpan"></span>
+							<span class="urgentBubbleSpan"></span>
+						</a>
+					</li>
+
+					<li>
+						<a href="accounts.html?onSelectToPage=transactions.html">
+							%label.accounts%
+						</a>
+					</li>
+					<li>
+						<a href="mobile_cash.html" data-role="none">
+							%label.mobile.cash%
+						</a>
+					</li>
+					<li>
+						<a href="transfers.html" data-role="none">
+							%label.transfer.funds%
+						</a>
+					</li>
+					<li>
+						<a href="bills.html" data-role="none">
+							%label.pay.bills%
+						</a>
+					</li>
+					<li>
+						<a href="money.html" data-role="none">
+							%title.send.money%
+						</a>
+					</li>
+					<li>
+						<a href="check.html" data-role="none">
+							%label.deposit.check%
+						</a>
+					</li>
+					<li>
+						<a href="goals.html" data-role="none">
+							%label.set.goals%
+						</a>
+					</li>
+
+					<li id="locations">
+						<a href="locations.html">
+							%label.location%
+						</a>
+					</li>
+					<li>
+						<a href="contact.html">
+							%label.contact%
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div data-role="panel" id="menuPanel" data-theme="b" role="navigation"  data-position-fixed="true" data-animate="false">
+	</div>
+</div>

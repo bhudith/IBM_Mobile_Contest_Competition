@@ -1,0 +1,52 @@
+<div id="checkFinalPage" data-role="page" data-class="com/views/CheckFinalPageView">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<h1>%title.deposit.complete%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d" class="ui-btn-right">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+
+	<div data-role="content" role="main">
+		<div class="alertInfo">
+			<img src="../images/place_holder.png"/>
+			<h2>%check.deposit.final.confirm%</h2>
+			<p>%check.deposit.final.confirmed.info%</p>
+			<p id="paymentTime"></p>
+		</div>
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li id="checkToAccount">
+				%check.deposit.account%<div class="rightText"></div>
+			</li>
+	
+			<li id="checkAmount">
+				%check.deposit.confirm.amount%<div class="rightText"></div>
+			</li>
+	
+			<li id="checkFront" class="checkDisplay">%check.front.check%
+				<img class="checkImage" alt="check_front"/>
+			</li>
+			<li id="checkBack" class="checkDisplay">%check.back.check%
+				<img class="checkImage" alt="check_back"/>
+			</li>
+	
+			<li data-role="list-divider">%check.deposit.detail%</li>
+			<li id="routingNumber">
+				%check.deposit.routing.number%<div class="rightText"></div>
+			</li>
+			<li id="checkAccount">
+				%check.deposit.checkAccount%<div class="rightText"></div>
+			</li>
+	
+		</ul>
+		<div class="row">
+			<div class="col-xs-12">
+				<button id="depositAnotherBtn" data-role="button" data-theme="b">
+					%check.deposit.another.button%</button>
+			</div>
+			<div class="col-xs-12">
+				<button id="returnHomeBtn" data-role="button" data-theme="c">
+					%check.return.home.button%</button>
+			</div>
+		</div>
+	</div>
+</div>

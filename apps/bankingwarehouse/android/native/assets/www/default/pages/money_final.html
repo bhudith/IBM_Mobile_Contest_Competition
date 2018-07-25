@@ -1,0 +1,41 @@
+<div id="moneyFinalPage" data-role="page" data-class="com/views/MoneyFinalPageView">
+	<div data-role="header" data-theme="b" data-position="fixed" role="banner">
+		<h1>%title.money.complete%</h1>
+		<a href="home.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="d" class="ui-btn-right">
+		<span aria-hidden="true">HomePage</span>
+		</a>
+	</div>
+	
+	<div data-role="content" role="main">
+		<div class="alertInfo">
+			<img src="../images/place_holder.png"/>
+			<h2>%money.pay.confirmed%</h2>
+			<p>%money.pay.confirmed.info%</p>
+			<p id="paymentTime"></p>
+		</div>
+		<ul data-role="listview" data-inset="false" data-theme="e" data-divider-theme="e">
+			<li data-role="list-divider" class="small">%money.from%</li>
+			<li id="moneyAccount">
+				<div class="selectedInfo"></div>
+			</li>
+			<li data-role="list-divider" class="small">%money.to%</li>
+			<li id="moneyPayee">
+				<div class="selectedInfo"></div>
+			</li>
+			<li data-role="list-divider" class="small">%confirm.final.amount%</li>
+			<li id="transferAmount">
+				<div class="selectedInfo"></div>
+			</li>
+		</ul>
+		<div class="row">
+			<div class="col-xs-12">
+				<button id="transferMoreBtn" data-role="button" data-theme="b">
+					%money.send.more.button%</button>
+			</div>
+			<div class="col-xs-12">
+				<button id="returnHomeBtn" data-role="button" data-theme="c">
+					%money.return.home.button%</button>
+			</div>
+		</div>
+	</div>
+</div>

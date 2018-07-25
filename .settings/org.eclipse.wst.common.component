@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="RetailBank">
+        <wb-resource deploy-path="/" source-path="/apps/RetailBank/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/RetailBank/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/RetailBank/android"/>
+        <property name="context-root" value="RetailBank"/>
+    </wb-module>
+</project-modules>

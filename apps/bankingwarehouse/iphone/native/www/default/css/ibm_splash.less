@@ -1,0 +1,132 @@
+.ibm_splash[data-role=page] {
+	background: url("../images/splash/bg_splash.png") no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	padding: 30px 0px 70px 0px;
+}
+
+.ibm_splash .header {
+	background: none;
+	border: none;
+	text-align: center;
+	width: 100%;
+	height: 250px;
+}
+
+.ibm_splash .footer {
+	background: none;
+	border: none;
+	text-align: center;
+	width: 100%;
+	height: 150px;
+}
+
+.ibm_splash .header {
+	margin: 50px auto;
+}
+
+.ibm_splash .footer {
+	margin: 20px auto;
+	padding-bottom: 50px;
+}
+
+.ibm_splash .header .logo,
+.ibm_splash .footer .logo {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.ibm_splash .header .logo {
+	background-image: url("../images/splash/mobile_coc_logo.png");
+}
+
+.ibm_splash .footer .logo {
+	background-image: url("../images/splash/ibm_logo.png");
+}
+
+.ibm_splash div[data-role=content] {
+	text-align: left;
+	font-family: sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-shadow: none;
+	color: #2a5365;
+	padding: 50px;
+}
+
+.ibm_splash div[data-role=content] h1 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #2a5365;
+	text-rendering: initial;
+}
+
+.ibm_splash div[data-role=content] p {
+	font-size: 18px;
+	line-height: 25px;
+	margin: 0px 0px 25px 0px;
+}
+
+.ibm_splash .email {
+	text-transform: initial;
+	font-weight: normal;
+}
+
+.ibm_splash label {
+	text-transform: none;
+	margin-top: 15px;
+}
+
+.ibm_splash button {
+	width: 95%;
+	border: 0px;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: red;
+	padding: 10px;
+	color: white;
+	background: #86a8b7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#86a8b7), to(#384449));
+	margin: 0px 0px 10px 0px;
+}
+
+.ibm_splash button:active {
+	color: #2a5365;
+	background: #384449;
+	background: -webkit-gradient(linear, left top, left bottom, from(#384449), to(#86a8b7));
+}
+
+.ibm_splash #version {
+	position: absolute;
+	overflow: hidden;
+	top: 10px;
+	right: 10px;
+	text-shadow: none;
+	font-family: sans-serif;
+	font-weight: normal;
+	text-shadow: none;
+	color: #2a5365;
+}
+
+@media (max-width: @size-phone)
+{
+	.ibm_splash div[data-role=content] p {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.ibm_splash div[data-role=content] {
+		padding: 20px;
+	}
+
+	.ibm_splash .header {
+		height: 150px;
+		margin: 0px auto 10px 0px;
+	}
+}
+

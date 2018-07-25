@@ -1,0 +1,26 @@
+[		
+		{
+			"name": "IBM Stock",
+			"amount": 1500
+		},
+		
+		{
+			"name": "401k",
+			"amount": 5000
+		},
+		
+		{
+			"name": "Bond",
+			"amount": 750
+		},
+		
+		{
+			"name": "Mutual Fund",
+			"amount": 550
+		},
+		
+		{
+			"name": "Savings",
+			"amount": 2500
+		}	
+]
